@@ -4,6 +4,8 @@
   display: grid;
   grid-auto-rows: 1fr;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: $space;
+  padding: 0 $space;
 
   @include tablet {
     grid-template-columns: repeat(4, 1fr);
