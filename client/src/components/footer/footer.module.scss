@@ -10,6 +10,7 @@
     @include rich-text;
     span {
       color: $color-main;
+      font-weight: 600;
     }
   }
 }
