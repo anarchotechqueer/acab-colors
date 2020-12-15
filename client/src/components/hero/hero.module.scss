@@ -1,7 +1,7 @@
 @import '../../variables';
 
 .hero {
-  padding: $space-big * 2 $space-big;
+  padding: $space-big $space-double;
   position: relative;
 
   .title {
@@ -15,5 +15,9 @@
 
   span {
     color: $color-main;
+  }
+
+  @include tablet {
+    padding: $space-big * 2 $space-big;
   }
 }

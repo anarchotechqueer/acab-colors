@@ -1,7 +1,7 @@
 @import '../../variables';
 
 .footer {
-  padding: $space-big;
+  padding: $space-double;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,10 +11,14 @@
     &:before{
       content: "// ";
     }
-    
+
     span {
       color: $color-main;
       font-weight: 600;
     }
+  }
+
+  @include tablet {
+    padding: $space-big;
   }
 }
