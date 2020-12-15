@@ -40,3 +40,12 @@ $space-small: $space * .75;
     }
   }
 }
+
+$transition-duration: 275ms;
+$transition-timing-function: ease;
+
+@mixin standard-transition($property...) {
+  transition-property: $property;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}

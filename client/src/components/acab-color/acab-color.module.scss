@@ -1,3 +1,5 @@
+@import '../../variables';
+
 .color {
   padding: 2rem;
   position: relative;
@@ -5,15 +7,58 @@
   align-items: center;
   justify-content: center;
 
-
   &:before {
     content: "";
     display: block;
     padding-bottom: 100%;
   }
 
+  &:after {
+    @include standard-transition(width);
+    content: "";
+    position: absolute;
+
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+  }
+
   .hex {
     font-weight: 700;
     text-transform: uppercase;
+  }
+
+  .copy {
+    @include standard-transition(opacity);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: $space-half;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    opacity: 0;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  &:hover {
+    .copy {
+      opacity: 1;
+    }
+  }
+
+  &.copied {
+    &:after {
+      background-color: currentColor;
+      width: 100%;
+    }
   }
 }
