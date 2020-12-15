@@ -1,0 +1,15 @@
+@import '../../variables';
+
+.footer {
+  padding: $space-big;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .text {
+    @include rich-text;
+    span {
+      color: $color-main;
+    }
+  }
+}

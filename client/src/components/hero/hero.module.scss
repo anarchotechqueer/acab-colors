@@ -1,0 +1,19 @@
+@import '../../variables';
+
+.hero {
+  padding: $space-big * 2 $space-big;
+  position: relative;
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .text {
+    @include rich-text;
+    margin-top: $space-double;
+  }
+
+  span {
+    color: $color-main;
+  }
+}
