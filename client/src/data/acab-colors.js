@@ -1592,6 +1592,12 @@ export const test = {
     {"hex":"30acab"},
     {"hex":"31acab"},
     {"hex":"32acab"},
-    {"hex":"33acab"}
+    {"hex":"33acab"},
+    {"hex": "1312fa"},
+    {"hex": "1312fb"},
+    {"hex": "1312fc"},
+    {"hex": "1312fd"},
+    {"hex": "1312fe"},
+    {"hex": "1312ff"}
   ]
 };
