@@ -9,7 +9,7 @@ export default function Hero({color}) {
       </h1>
       <div className={styles.text}>
         <p>an extensive list of all colors containing <span>"ACAB"</span> or <span>"1312"</span></p>
-        <p>so your designs can hate cops as much as u</p>
+        <p>so your designs can hate cops as much as u do</p>
       </div>
     </div>
   );
