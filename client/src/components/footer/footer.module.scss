@@ -8,6 +8,10 @@
 
   .text {
     @include rich-text;
+    &:before{
+      content: "// ";
+    }
+    
     span {
       color: $color-main;
       font-weight: 600;
